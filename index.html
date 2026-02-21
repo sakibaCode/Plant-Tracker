@@ -23,12 +23,12 @@
             </div>
 
             <div class="bg-green-100 rounded-2xl p-5">
-                <h1 id="thrivingCount" class="text-[30px]  text-[#5e9a57]">4</h1>
+                <h1 id="thrivingCount" class="text-[30px]  text-[#5e9a57]">0</h1>
                 <p class=" text-[#2c7025] text-[20px]">Thriving</p>
             </div>
 
             <div class="bg-blue-100 rounded-2xl p-5">
-                <h1 id="survivingCount" class="text-[30px]  text-[#398cad]">4</h1>
+                <h1 id="survivingCount" class="text-[30px]  text-[#398cad]">0</h1>
                 <p class="text-[20px] text-[#48839b]">Surviving</p>
             </div>
 
@@ -42,12 +42,13 @@
 
         <!-- top button -->
         <div>
-            <button class="bg-black px-4 py-2 rounded text-white" id="all-filter-btn">All</button>
-            <button class="bg-gray-300 px-4 py-2 rounded" id="thrive-filter-btn">Thriving</button>
-            <button class="bg-gray-300 px-4 py-2 rounded" id="survive-filter-btn">Surviving</button>
+            <button onclick="toggleStyle('all-filter-btn')" class="bg-black text-white px-4 py-2 rounded" id="all-filter-btn">All</button>
+            <button onclick="toggleStyle('thrive-filter-btn')" class="bg-gray-300 px-4 py-2 rounded" id="thrive-filter-btn">Thriving</button>
+            <button onclick="toggleStyle('survive-filter-btn')" class="bg-gray-300 px-4 py-2 rounded" id="survive-filter-btn">Surviving</button>
         </div>
 
         <div id="allCards">
+
             <!-- card-1 -->
             <div class="card flex justify-between mt-10 p-8 border border-black rounded">
 
@@ -147,7 +148,9 @@
                     <button class="bg-red-300 px-4 py-2 rounded text-red-500">Delete</button>
                 </div>
             </div>
+
         </div>
+
     </main>
 
     <script src="script.js"></script>
